@@ -110,10 +110,10 @@ class BaseRLAlgorithm(object, metaclass=abc.ABCMeta):
                 self.expl_env.get_diagnostics(expl_paths),
                 prefix='expl/',
             )
-        logger.record_dict(
-            eval_util.get_generic_path_information(expl_paths),
-            prefix="expl/",
-        )
+        # logger.record_dict(
+        #     eval_util.get_generic_path_information(expl_paths),
+        #     prefix="expl/",
+        # )
         """
         Evaluation
         """
@@ -127,10 +127,10 @@ class BaseRLAlgorithm(object, metaclass=abc.ABCMeta):
                 self.eval_env.get_diagnostics(eval_paths),
                 prefix='eval/',
             )
-        logger.record_dict(
-            eval_util.get_generic_path_information(eval_paths),
-            prefix="eval/",
-        )
+        # logger.record_dict(
+        #     eval_util.get_generic_path_information(eval_paths),
+        #     prefix="eval/",
+        # )
 
         """
         Misc
